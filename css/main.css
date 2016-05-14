@@ -1,0 +1,346 @@
+body {
+  background: #fff;
+  font-family: "calibri"; }
+
+.def-font-fam, .slider .slide-link-container .slide-link-button span, .reason-container .reason-text, .impacts-container .container .impact-number, .impacts-container .container .impact-text, .impacts-container .container .impact-link, .latest-blog .post-body .post-content, .latest-blog .post-body .post-read-more {
+  font-family: "calibri"; }
+
+.container-fluid {
+  padding: 0px !important; }
+
+.section-title, .reason-container .reason-title, .impacts-container .container .impacts-title {
+  font-family: "open-sans";
+  font-size: 38px;
+  text-align: center;
+  line-height: .8; }
+
+.section-text, .reason-container .reason-text, .impacts-container .container .impact-text {
+  text-align: center;
+  font-weight: 300;
+  font-size: 16px; }
+
+.section-button, .slider .slide-link-container .slide-link-button span, .impacts-container .container .impact-link span {
+  line-height: 40px;
+  vertical-align: middle;
+  text-decoration: none; }
+
+.shade, .slider .slide-link-container .slide-img-link-bg, .testimonial .testimonial-shade, .testimonial .testimonial-box .test-box-shade {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%; }
+
+::-webkit-input-placeholder {
+  color: #fff;
+  opacity: 1; }
+
+:-moz-placeholder {
+  color: #fff;
+  opacity: 1; }
+
+::-moz-placeholder {
+  color: #fff;
+  opacity: 1; }
+
+:-ms-input-placeholder {
+  color: #fff;
+  opacity: 1; }
+
+.header {
+  border-top: 2px solid #005696;
+  height: 70px; }
+  .header .header-logo {
+    margin-left: 85px;
+    height: 67px; }
+  .header .main-nav {
+    float: right;
+    margin-right: 100px;
+    margin-top: 13px;
+    height: 55px; }
+    .header .main-nav a {
+      padding: 14px;
+      color: #000;
+      font-weight: 300;
+      position: relative;
+      float: left;
+      font-size: 16px;
+      font-family: "open-sans";
+      text-decoration: none; }
+      .header .main-nav a :hover {
+        text-decoration: none; }
+    .header .main-nav :last-child {
+      color: #005696;
+      background: #ffbf40;
+      font-weight: 400; }
+
+.slider {
+  height: 605px;
+  overflow: hidden;
+  position: relative;
+  background-image: url("/wp-content/assets/Slideshow-Nurse-Wilson.jpg");
+  background-size: cover; }
+  .slider .slide-link-container {
+    height: 130px;
+    width: 815px;
+    position: absolute;
+    bottom: 20px;
+    left: 100px;
+    text-align: center;
+    z-index: 0;
+    color: #fff; }
+    .slider .slide-link-container .slide-img-link-bg {
+      background: #005696;
+      opacity: .5;
+      z-index: -1; }
+    .slider .slide-link-container .slide-link-text {
+      width: 100%;
+      opacity: 1;
+      font-size: 50px;
+      font-weight: 300;
+      z-index: 50;
+      font-family: "open-sans"; }
+    .slider .slide-link-container .slide-link-button {
+      width: 300px;
+      height: 40px;
+      margin: auto;
+      background: #2eb3eb;
+      color: #fff;
+      margin-top: 18px; }
+
+.reason-container {
+  height: 345px; }
+  .reason-container .reason-title {
+    width: 100%;
+    margin-top: 75px;
+    color: #005696;
+    text-align: center; }
+  .reason-container .reason-text {
+    width: 865px;
+    margin: auto;
+    margin-top: 30px; }
+
+.impacts-container {
+  height: 487px;
+  background: #005696;
+  color: #fff; }
+  .impacts-container .container .impacts-title {
+    margin-top: 75px; }
+  .impacts-container .container .impact-number {
+    font-weight: 700;
+    padding: 25px;
+    margin-top: 20px;
+    font-size: 48px;
+    text-align: center; }
+  .impacts-container .container .impact-line {
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 5px;
+    background-color: #2eb3eb;
+    height: 1px; }
+  .impacts-container .container .impact-text {
+    padding: 25px; }
+  .impacts-container .container .impact-link {
+    width: 145px;
+    height: 40px;
+    background-color: #2eb3eb;
+    margin: auto;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase; }
+
+.impacts-container > .impact-more > .impact-link > span:hover {
+  text-decoration: none; }
+
+.latest-blog .post-image {
+  text-align: center;
+  padding: 70px 15px 70px 100px; }
+  .latest-blog .post-image img {
+    width: 100%;
+    height: 100%; }
+.latest-blog .post-body {
+  padding: 70px 100px 70px 15px; }
+  .latest-blog .post-body .post-title {
+    color: #005696;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: left;
+    font-family: "open-sans";
+    margin-bottom: 40px; }
+  .latest-blog .post-body .post-content {
+    font-weight: 300; }
+  .latest-blog .post-body .post-read-more {
+    text-transform: uppercase;
+    font-weight: 700; }
+
+.latest-blog > .post-body > .post-read-more:hover {
+  text-decoration: none; }
+
+.testimonial {
+  height: 390px;
+  overflow: hidden;
+  position: relative;
+  background-image: url("/wp-content/assets/hospital-front-1398x600.jpg");
+  background-size: cover; }
+  .testimonial .testimonial-shade {
+    background: #005696;
+    opacity: .75; }
+  .testimonial .testimonial-box {
+    max-width: 940px;
+    width: 87.5%;
+    position: relative;
+    margin: auto;
+    text-align: center;
+    margin-top: 70px; }
+    .testimonial .testimonial-box .test-box-shade {
+      background: #e5e5e5;
+      opacity: .25; }
+    .testimonial .testimonial-box .testimonial-text {
+      color: #fff;
+      font-weight: 300;
+      font-size: 30px;
+      font-family: "merriweather";
+      font-style: italic;
+      margin-bottom: 30px;
+      padding-top: 45px;
+      padding-left: 65px;
+      padding-right: 65px; }
+      .testimonial .testimonial-box .testimonial-text :before, .testimonial .testimonial-box .testimonial-text :after {
+        content: '"'; }
+    .testimonial .testimonial-box .testimonial-sign {
+      color: #fff;
+      font-weight: 300;
+      font-family: "open-sans";
+      padding-bottom: 60px;
+      text-transform: uppercase; }
+
+.upcal, .footer .sm-footer a, .footer .lg-footer .inform .inform-title, .footer .lg-footer .info .loc-cont .info-title {
+  font-family: "calibri";
+  text-transform: uppercase; }
+
+.footer {
+  height: 337px;
+  padding-left: 100px;
+  padding-right: 100px; }
+  .footer a {
+    color: #fff; }
+  .footer .sm-footer {
+    width: 100%;
+    height: 80px;
+    background: #005696;
+    padding-left: 100px;
+    padding-right: 100px; }
+    .footer .sm-footer a {
+      margin-right: 20px;
+      padding-top: 30px;
+      position: relative;
+      float: left; }
+      .footer .sm-footer a :hover, .footer .sm-footer a :focus {
+        text-decoration: none;
+        color: #fff; }
+    .footer .sm-footer .social-links {
+      position: relative;
+      text-align: right;
+      padding-top: 30px;
+      height: 80px; }
+      .footer .sm-footer .social-links i.fa {
+        color: #2eb3eb;
+        font-size: 35px;
+        margin-right: 5px; }
+      .footer .sm-footer .social-links i.search {
+        width: 195px;
+        float: right;
+        margin-left: 5px; }
+        .footer .sm-footer .social-links i.search .search-form {
+          width: 195px; }
+          .footer .sm-footer .social-links i.search .search-form label {
+            margin-bottom: 0px;
+            position: relative;
+            float: left; }
+          .footer .sm-footer .social-links i.search .search-form .screen-reader-text {
+            display: none; }
+          .footer .sm-footer .social-links i.search .search-form input {
+            width: 155px;
+            height: 38px;
+            background: #003258;
+            border: none;
+            padding: none;
+            margin: none;
+            color: #fff; }
+          .footer .sm-footer .social-links i.search .search-form button {
+            width: 40px;
+            height: 38px;
+            border: none;
+            padding: 0px;
+            position: relative;
+            float: left;
+            background-image: url("/wp-content/assets/search.png"); }
+  .footer .lg-footer {
+    width: 100%;
+    height: 255px;
+    border-top: 1px solid #fff;
+    background: #005696;
+    color: #fff;
+    font-family: "calibri";
+    padding-left: 100px;
+    padding-right: 100px; }
+    .footer .lg-footer .inform {
+      margin-top: 35px; }
+      .footer .lg-footer .inform .inform-title {
+        font-size: 18px;
+        width: 100%;
+        margin-bottom: 20px;
+        font-weight: 700; }
+      .footer .lg-footer .inform .email-label {
+        width: 100%;
+        font-weight: 300; }
+        .footer .lg-footer .inform .email-label span {
+          color: #FF0000;
+          margin-left: 3px; }
+      .footer .lg-footer .inform .email-input {
+        width: 100%;
+        border: none;
+        height: 30px;
+        margin-bottom: 30px; }
+      .footer .lg-footer .inform .submit-email {
+        width: 100px;
+        height: 40px;
+        background: #2eb3eb;
+        border: none; }
+    .footer .lg-footer .info {
+      margin-top: 35px;
+      font-weight: 300; }
+      .footer .lg-footer .info div {
+        text-align: right; }
+      .footer .lg-footer .info .loc-cont {
+        margin-bottom: 55px; }
+        .footer .lg-footer .info .loc-cont .info-title {
+          font-weight: 700; }
+      .footer .lg-footer .info .oth-cont {
+        width: 100%; }
+        .footer .lg-footer .info .oth-cont a {
+          padding-left: 7px; }
+        .footer .lg-footer .info .oth-cont span {
+          padding-right: 7px;
+          border-right: 1px solid #fff; }
+      .footer .lg-footer .info a {
+        text-decoration: underline; }
+      .footer .lg-footer .info .site-credit {
+        margin-top: 5px; }
+
+.footer > .sm-footer > .left-links > .footer-link:hover {
+  color: #fff;
+  text-decoration: none; }
+
+.search-form label .search-field {
+  font-family: "calibri";
+  font-style: italic;
+  padding-left: 8px;
+  font-weight: 300;
+  opacity: 1; }
+
+@media screen and (min-width: 500px) {
+  .latest-blog .post-image {
+    text-align: center; } }
+
+/*# sourceMappingURL=main.css.map */

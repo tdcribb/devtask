@@ -1,0 +1,142 @@
+@import 'variables';
+@import 'mixins';
+
+body {background:$clr-white; font-family:$font-main-2;}
+.def-font-fam {font-family:$font-main-2;}
+.container-fluid {padding: $no-padding;}
+.section-title {font-family:$font-main; font-size:38px; text-align:center; line-height:.8;}
+.section-text {text-align:center; font-weight:$font-light; font-size:16px;}
+.section-button {line-height:40px; vertical-align:middle; text-decoration:none;}
+.shade {position:absolute; top:0px; left:0px; width:100%; height:100%;}
+::-webkit-input-placeholder {color: #fff; opacity:1;}
+:-moz-placeholder {color: #fff; opacity:1;}
+::-moz-placeholder {color: #fff; opacity:1;}
+:-ms-input-placeholder {color: #fff; opacity:1;}
+
+.header {border-top:2px solid $clr-brand; height:70px; 
+
+	.header-logo {margin-left:85px; height:67px;}
+	.main-nav {float:right; margin-right:100px; margin-top:13px; height:55px;
+		a {padding:14px; color:$clr-text; font-weight:$font-light; position:relative; float:left; font-size:16px; font-family: $font-main; text-decoration:none;
+			:hover {text-decoration:none;}
+		}
+		:last-child {color:$clr-brand; background:$clr-brand-light; font-weight:$font-normal;}
+	}
+}
+
+.slider {height:605px; overflow:hidden; position:relative;
+	background-image: url("/wp-content/assets/Slideshow-Nurse-Wilson.jpg"); background-size: cover;	
+	.slide-link-container {height:130px; width:815px; position:absolute; bottom:20px; left:100px; text-align:center; z-index:0; color:$clr-white;
+		.slide-img-link-bg {background:$clr-brand; opacity:.5; z-index:-1; @extend .shade;}
+		.slide-link-text {width:100%; opacity:1; font-size:50px; font-weight:$font-light; z-index:50; font-family:$font-main;}
+		.slide-link-button {width:300px; height:40px; margin:auto; background:$clr-brand-2; color:$clr-white; margin-top:18px;
+			span {@extend .section-button; @extend .def-font-fam;}
+		}
+	}
+}
+
+.reason-container {height:345px;
+	.reason-title {width:100%; margin-top:75px; color:$clr-brand; text-align:center; @extend .section-title;}
+	.reason-text {width:865px; margin:auto; margin-top:30px; @extend .section-text; @extend .def-font-fam;}
+}
+
+.impacts-container {height:487px; background:$clr-brand; color:$clr-white;
+	.container {
+		.impacts-title {margin-top:75px; @extend .section-title; }
+		.impact-number {@extend .def-font-fam; font-weight:$font-bold; padding:25px; margin-top:20px; font-size:48px; text-align:center;}
+		.impact-line {margin-left:25px; margin-right:25px; margin-top:5px; background-color:$clr-brand-2; height:1px;}
+		.impact-text {@extend .section-text; @extend .def-font-fam; padding:25px;}
+		.impact-link {width:145px; height:40px; background-color:$clr-brand-2; margin:auto; text-align:center; color:$clr-white; text-transform:uppercase; @extend .def-font-fam;
+			span {@extend .section-button;}
+		}
+	}
+	
+}
+.impacts-container > .impact-more > .impact-link > span:hover {text-decoration:none;}
+
+.latest-blog {
+	.post-image {text-align:center; padding:70px 15px 70px 100px;
+		img {width:100%; height:100%}
+	}
+	.post-body {padding:70px 100px 70px 15px; 
+		.post-title {color:$clr-brand; font-weight:$font-bold; font-size:20px; text-align:left; font-family:$font-main; margin-bottom:40px;}
+		.post-content {@extend .def-font-fam; font-weight:$font-light;}
+		.post-read-more {text-transform:uppercase; @extend .def-font-fam; font-weight:$font-bold;}
+	}
+}
+.latest-blog > .post-body > .post-read-more:hover {text-decoration:none;}
+
+.testimonial {height:390px; overflow:hidden; position:relative;
+	background-image: url("/wp-content/assets/hospital-front-1398x600.jpg"); background-size: cover;	
+	.testimonial-shade {@extend .shade; background:$clr-brand; opacity:.75;}
+	.testimonial-box {max-width:940px; width:87.5%; position:relative; margin:auto; text-align:center; margin-top:70px;
+		.test-box-shade {@extend .shade; background:$clr-brand-2-light; opacity:.25;}
+		.testimonial-text {color:$clr-white; font-weight:$font-light; font-size:30px; font-family:$font-serif; font-style:italic; margin-bottom:30px; padding-top:45px; padding-left:65px; padding-right:65px;
+			:before, :after {
+				content: '"';
+			}
+		}
+		.testimonial-sign {color:$clr-white; font-weight:$font-light; font-family:$font-main; padding-bottom:60px; text-transform:uppercase;}
+	}
+}
+
+.upcal {font-family:$font-main-2; text-transform:uppercase; }
+.footer {height:337px; padding-left:100px; padding-right:100px; 
+	a {color:$clr-white;}
+	.sm-footer {width:100%; height:80px; background:$clr-brand; padding-left:100px; padding-right:100px; 
+		a {@extend .upcal; margin-right:20px; padding-top:30px; position:relative; float:left;
+			:hover, :focus {text-decoration:none; color:$clr-white;}
+		}
+		.social-links {position:relative; text-align:right; padding-top:30px; height:80px;
+			i.fa {color:$clr-brand-2; font-size:35px; margin-right:5px;}
+			i.search {width:195px; float:right; margin-left:5px;
+				.search-form {width:195px;
+					label {margin-bottom:0px; position:relative; float:left;}
+					.screen-reader-text {display:none;}
+					input {width:155px; height:38px; background:$darkest-blue; border:none; padding:none; margin:none; color:$clr-white;}
+					button {width:40px; height:38px; border:none; padding:0px; position:relative; float:left; background-image:url("/wp-content/assets/search.png");}
+				}
+			}
+		}
+		
+	}
+	.lg-footer {width:100%; height:255px; border-top:1px solid $clr-white; background:$clr-brand; color:$clr-white; font-family:$font-main-2; padding-left:100px; padding-right:100px;
+		.inform {margin-top:35px;
+			.inform-title {font-size:18px; width:100%; margin-bottom:20px; @extend .upcal; font-weight:$font-bold;}
+			.email-label {width:100%; font-weight:$font-light;
+				span {color:$red; margin-left:3px;}
+			}
+			.email-input {width:100%; border:none; height:30px; margin-bottom:30px;}
+			.submit-email {width:100px; height:40px; background:$clr-brand-2; border:none;}
+		}
+		.info {margin-top:35px; font-weight:$font-light;
+			div {text-align:right;}
+			.loc-cont {margin-bottom:55px; 
+				.info-title {@extend .upcal; font-weight:$font-bold;}
+			}
+			.oth-cont {width:100%; 
+				a {padding-left:7px;}
+				span {padding-right:7px; border-right:1px solid $clr-white;}
+			}
+			a {text-decoration:underline;}
+			.site-credit {margin-top:5px;}
+		}
+	}
+}
+.footer > .sm-footer > .left-links > .footer-link:hover {color:$clr-white; text-decoration:none;}
+.search-form label .search-field {font-family:$font-main-2; font-style:italic; padding-left:8px; font-weight:$font-light; opacity:1;}
+
+@media screen and (max-width: 320px) {
+
+}
+@media screen and (min-width: 500px) {
+	.latest-blog {
+		.post-image {text-align:center;
+		}
+	}
+}
+
+
+@media screen and (min-width: 800px) {
+
+}
