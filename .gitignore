@@ -1,4 +1,9 @@
 *.log
-
+.DS_Store
+	.sass-cache/
+	test.php
+	wp-content/.DS_Store
+	wp-content/themes/.DS_Store
+	wp-content/themes/twentysixteen/.DS_Store
 
 
