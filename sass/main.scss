@@ -1,7 +1,9 @@
 @import 'variables';
 @import 'mixins';
 
-body {background:$clr-white; font-family:$font-main-2;}
+body {background:$clr-white; font-family:$font-main-2;
+	.row {margin-left:0px; margin-right:0px;}
+}
 .def-font-fam {font-family:$font-opensans;}
 .container-fluid {padding: $no-padding;}
 .section-title {font-size:38px; text-align:center; line-height:.8;}
@@ -14,27 +16,81 @@ body {background:$clr-white; font-family:$font-main-2;}
 :-ms-input-placeholder {color: #fff; opacity:1;}
 
 .header {border-top:2px solid $clr-brand; height:70px; 
-	.logo-cont {text-align:center;
-		.header-logo {height:67px;}
+	.mob-nav-btn {display:none;}
+	.logo-cont {text-align:center; height:100%; position:relative;
+		.header-logo {height:100%;}
 	}
-	.main-nav {margin-top:28px; height:30px; text-align:center;
-		a {padding:14px; color:$clr-text; font-weight:$font-light; position:relative; font-size:18px; font-family:$font-merri; text-decoration:none;
+	.main-nav {margin-top:28px; height:30px; text-align:center; padding-left:0px;
+		a {padding:14px; color:$clr-text; font-weight:$font-light; position:relative; font-size:16px; font-family:$font-merri; text-decoration:none;
 			:hover {text-decoration:none;}
 		}
-		:last-child {color:$clr-brand; background:$clr-brand-light; font-weight:$font-normal; font-size:20px;}
+		:last-child {color:$clr-brand; background:$clr-brand-light; font-weight:$font-normal; font-size:18px;}
 	}
+}
+
+@media screen and (max-width: 970px){
+	.header {height:57px;
+		.logo-cont {padding:0px;}
+		.main-nav {padding:0px; margin-top:16px;
+			a {font-size:14px; padding:8px;}
+			:last-child {font-size:16px; padding-top:17px; padding-bottom:17px;}
+			.nav-link:hover {background:$clr-brand-2-light;}
+		}
+	}
+}
+
+@media screen and (max-width: 780px){
+	.header {
+		.main-nav {position:absolute; top:40px; right:0px; z-index:100; width:150px; 
+			a {width:100%; background:$clr-white; position:relative; float:right;}
+		}
+		.mob-nav-btn {display:block; width:110px; height:40px; background-image: url("/wp-content/assets/menubutton.png"); background-size:cover; position:relative; float:right; margin-top:7px; margin-right:4px;}
+	}	
 }
 
 
 .slider {height:605px; overflow:hidden; position:relative; background-image: url("/wp-content/assets/Slideshow-Nurse-Wilson.jpg"); background-size:cover;	
-	.slide-link-container {height:130px; width:815px; position:absolute; bottom:20px; left:100px; text-align:center; z-index:0; color:$clr-white;
-		.slide-img-link-bg {background:$clr-brand; opacity:.5; z-index:-1; @extend .shade;}
-		.slide-link-text {width:100%; opacity:1; font-size:50px; font-weight:$font-light; z-index:50; font-family:$font-merri;}
-		.slide-link-button {width:300px; height:40px; margin:auto; background:$clr-brand-2; color:$clr-white; margin-top:18px;
-			span {@extend .section-button; font-family:$font-opensans;}
+	.slide-link-row {position:absolute; bottom:20px; left:0px; width:100%; 
+		.slide-grid-cont {position:relative; text-align:center;
+			.slide-link-container {height:130px; width:80%; z-index:0; color:$clr-white; position:relative; text-align:center; margin-left:10%;
+				.slide-img-link-bg {background:$clr-brand; opacity:.5; z-index:-1; @extend .shade;}
+				.slide-link-text {width:100%; opacity:1; font-size:50px; font-weight:$font-light; z-index:50; font-family:$font-merri;}
+				.slide-link-button {width:300px; height:40px; margin:auto; background:$clr-brand-2; color:$clr-white; margin-top:18px;
+					span {@extend .section-button; font-family:$font-opensans;}
+				}
+				@media screen and (max-width: 970px){
+					.slide-link-text {font-size:30px; padding-top:20px;}
+				}
+				@media screen and (max-width: 792px){
+					.slide-link-text {font-size:24px; padding-top:20px;}
+				}
+				@media screen and (max-width: 600px){
+					.slide-link-text {font-size:18px; padding-top:20px;}
+				}
+			}
+			@media screen and (max-width: 970px){
+				.slide-link-container {width:70%; margin-left:15%;}
+			}
+			@media screen and (max-width: 500px){
+				.slide-link-container {width:100%; background:$clr-brand; posiation:relative; margin:0px;}
+			}
+			
 		}
+		@media screen and (max-width: 500px){
+			.slide-grid-cont {padding:0px;}
+		}
+			
+		.slide-ph {posiation:relative;}
+	}
+	@media screen and (max-width: 500px){
+		.slide-link-row {bottom:0px;}
 	}
 }
+
+@media screen and (max-width: 970px){
+	.slider {height:285px;}
+}
+
 
 .reason-container {position:realtive;
 	.row {

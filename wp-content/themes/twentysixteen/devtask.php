@@ -41,28 +41,36 @@ Template Name: Front End Dev Task
 
 <body>
 	<div class="container-fluid">
+
 		<div class="header container-fluid">	
-				<div class="logo-cont col-xs-4 col-sm-4 col-md-3 col-lg-3">
+				<div class="logo-cont col-xs-4 col-sm-2 col-md-2 col-lg-2">
 					<img src="/wp-content/assets/RMH-logo.jpg" class="header-logo" />
 				</div>
+				<a href="#expandMenu" data-toggle="collapse"><div class="mob-nav-btn"></div></a>
 
-				<div class="main-nav col-xs-8 col-sm-8 col-md-9 col-lg-9">
-					<a href="#" role="button">Your Impact</a>
-					<a href="#" role="button">Ways to Give</a>
-					<a href="#" role="button">How Your Gift is Used</a>
-					<a href="#" role="button">Volunteer</a>
-					<a href="#" role="button">About Us</a>
-					<a href="#" role="button">DONATE</a>
+				<div id="expandMenu" class="main-nav col-xs-8 col-sm-10 col-md-10 col-lg-10">
+					<a href="#" class="nav-link" role="button">Your Impact</a>
+					<a href="#" class="nav-link" role="button">Ways to Give</a>
+					<a href="#" class="nav-link" role="button">How Your Gift is Used</a>
+					<a href="#" class="nav-link" role="button">Volunteer</a>
+					<a href="#" class="nav-link" role="button">About Us</a>
+					<a href="#" class="nav-link" role="button">DONATE</a>
 				</div>
-
 		</div>
+
 		<div class="slider container-fluid">
-			<div class="row slide-link-container">
-				<div class="slide-img-link-bg"></div>
-				<div class="slide-link-text">Funding compassionate care</div>
-				<a href="#"><div class="slide-link-button"><span>READ BILL AND GERRY'S STORY</span></div></a>
+			<div class="row slide-link-row">
+				<div class="slide-grid-cont col-xs-12 col-sm-12 col-md-12 col-lg-10">
+					<div class="slide-link-container">
+						<div class="slide-img-link-bg"></div>
+						<div class="slide-link-text">Funding compassionate care</div>
+						<a href="#"><div class="slide-link-button"><span>READ BILL AND GERRY'S STORY</span></div></a>
+					</div>
+				</div>
+				<div class="slide-ph col-xs-0 col-sm-0 col-md-0 col-lg-2"></div>
 			</div>
 		</div>
+
 
 		<div class="reason-container container-fluid">
 			<div class="row col-lg-12">
