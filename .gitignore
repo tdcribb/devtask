@@ -6,5 +6,6 @@
 	wp-content/themes/.DS_Store
 	wp-content/themes/twentysixteen/.DS_Store
 	wp-config.php
+	sql/
 
 
