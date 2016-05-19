@@ -125,7 +125,9 @@ body {
   overflow: hidden;
   position: relative;
   background-image: url("/wp-content/assets/Slideshow-Nurse-Wilson.jpg");
-  background-size: cover; }
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; }
   .slider .slide-link-row {
     position: absolute;
     bottom: 20px;
@@ -286,7 +288,9 @@ body {
   overflow: hidden;
   position: relative;
   background-image: url("/wp-content/assets/hospital-front-1398x600.jpg");
-  background-size: cover; }
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; }
   .testimonial .testimonial-shade {
     background: #005696;
     opacity: .75;

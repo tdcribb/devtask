@@ -49,7 +49,7 @@ body {background:$clr-white; font-family:$font-main-2;
 }
 
 
-.slider {height:605px; overflow:hidden; position:relative; background-image: url("/wp-content/assets/Slideshow-Nurse-Wilson.jpg"); background-size:cover;	
+.slider {height:605px; overflow:hidden; position:relative; background-image: url("/wp-content/assets/Slideshow-Nurse-Wilson.jpg"); background-size:cover; background-repeat:no-repeat; background-position: center center;
 	.slide-link-row {position:absolute; bottom:20px; left:0px; width:100%; 
 		.slide-grid-cont {position:relative; text-align:center;
 			.slide-link-container {height:130px; width:80%; z-index:0; color:$clr-white; position:relative; text-align:center; margin-left:10%;
@@ -146,7 +146,7 @@ body {background:$clr-white; font-family:$font-main-2;
 .latest-blog > .post-body > .post-read-more:hover {text-decoration:none;}
 
 .testimonial {overflow:hidden; position:relative;
-	background-image: url("/wp-content/assets/hospital-front-1398x600.jpg"); background-size: cover;	
+	background-image: url("/wp-content/assets/hospital-front-1398x600.jpg"); background-size: cover; background-repeat:no-repeat; background-position: center center;
 	.testimonial-shade {@extend .shade; background:$clr-brand; opacity:.75; z-index:1;}
 	.testimonial-shade-blk {@extend .shade; background:$clr-black; opacity:.5; z-index:2;}
 	.testimonial-box {max-width:940px; width:87.5%; position:relative; margin:auto; text-align:center; margin-top:70px; margin-bottom:75px; padding:35px 60px 55px 60px; z-index:3;

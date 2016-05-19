@@ -17,7 +17,7 @@ function mobNav() {
 	var winWidth = $(window).width();
 	if (winWidth <= 780) {
 		$('.main-nav').addClass('collapse');
-	} else {
+	} else if (winWidth > 780) {
 		$('.main-nav').removeClass('collapse');
 	}
 }
