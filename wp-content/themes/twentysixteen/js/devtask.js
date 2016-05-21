@@ -15,9 +15,9 @@ function setFontSearch() {
 
 function mobNav() {
 	var winWidth = $(window).width();
-	if (winWidth <= 780) {
+	if (winWidth <= 768) {
 		$('.main-nav').addClass('collapse');
-	} else if (winWidth > 780) {
+	} else if (winWidth > 768) {
 		$('.main-nav').removeClass('collapse');
 	}
 }
