@@ -123,10 +123,10 @@ Template Name: Front End Dev Task
 					<?php while ( $loop->have_posts() ) : $loop->the_post(); 
 						$posturl = get_permalink(); ?>
 
-						<div class="post-image col-sm-12 col-md-6 col-lg-6">
+						<div class="post-image col-sm-12 col-md-6">
 							<?php echo the_post_thumbnail() ?>
 						</div>
-						<div class="post-body col-sm-12 col-md-6 col-lg-6">
+						<div class="post-body col-sm-12 col-md-6">
 							<div class="post-title">
 								<?php the_title(); ?>
 							</div>

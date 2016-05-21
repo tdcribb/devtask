@@ -430,12 +430,14 @@ body {background:$clr-white; font-family:$font-main-2;-webkit-font-smoothing:ant
 // LATEST BLOG POST
 
 .latest-blog {
+	padding:55px 0px 75px;
 	.row {
-		.post-image {text-align:center; padding:55px 15px 10px 15px;
+		.post-image {
+			text-align:center; 
 			img {width:100%; height:100%}
 		}
 		.post-body {
-			padding:12px 15px 75px 15px;
+			padding-top:23px;
 			.post-title {
 				color:$clr-brand; 
 				font-size:22px; 
@@ -462,12 +464,6 @@ body {background:$clr-white; font-family:$font-main-2;-webkit-font-smoothing:ant
 				letter-spacing:0.9px;
 			}
 		}
-		
-		@media screen and (min-width: 480px){
-			.post-image {padding:55px 15px 10px 15px;}
-			.post-body {padding:12px 15px 70px 15px;}
-
-		}
 
 	}
 	
@@ -475,36 +471,47 @@ body {background:$clr-white; font-family:$font-main-2;-webkit-font-smoothing:ant
 
 .latest-blog > .post-body > .post-read-more:hover {text-decoration:none;}
 
-@media screen and (min-width: 992px){
-	.latest-blog {
-		.container-fluid .row .post-image {
-			padding-bottm:50px;
-		}
-		.container-fluid .row .post-body {
-				.post-content {
-					font-size: 16px;
-				}
-			}
-	}
-}
+
 
 @media screen and (min-width: 768px){
 	.latest-blog {
+
+		padding:70px 0px 70px 0px;
 		.container-fluid .row .post-image {
-			padding: 70px 100px 0px 100px;
+			padding-left:100px;
+			padding-right:75px;
+			img {
+				padding-right:25px;
+			}
 		}
 		.container-fluid .row .post-body {
-			padding:2px 20px 67px 19px;
-				.post-title {
-					font-size:26px; 
-					line-height:32px;
-				}
-				.post-content {
-					font-size: 15px;
-				    line-height: 30px;
-				    padding-top: 10px;
-				}
+			padding-top:0px;
+			.post-title {
+				font-size:26px; 
+				line-height:32px;
 			}
+			.post-content {
+				font-size: 15px;
+			    line-height: 31px;
+			    padding-top: 5px;
+			}
+			
+		}
+	}
+}
+
+@media screen and (min-width: 992px){
+	.latest-blog {
+		.container-fluid .row .post-image {
+			padding-right:0px;
+			img {
+				padding-right: 15px;
+			}
+		}
+		.container-fluid .row .post-body {
+			padding-left:40px;
+			padding-right: 100px;
+		}
 	}
 }
 
@@ -558,6 +565,7 @@ body {background:$clr-white; font-family:$font-main-2;-webkit-font-smoothing:ant
 			letter-spacing:.2px;
 		}
 	}
+
 	@media screen and (min-width: 768px){
 		.testimonial-box {
 		margin-bottom:77px;
@@ -568,9 +576,11 @@ body {background:$clr-white; font-family:$font-main-2;-webkit-font-smoothing:ant
 			}
 		}
 	}
-			
-	@media screen and (min-width: 992px){
-		
+}
+
+@media screen and (max-width: 480px){
+	.testimonial {
+		padding-bottom:10px;
 	}
 }
 
@@ -698,6 +708,7 @@ body {background:$clr-white; font-family:$font-main-2;-webkit-font-smoothing:ant
 		color:$clr-white; 
 		font-family:$font-main-2; 
 		margin:0px; 
+		border-bottom:1px solid $clr-white;
 		.inform {
 			margin-top:30px; 
 			font-family:$font-opensans; 
@@ -801,6 +812,20 @@ body {background:$clr-white; font-family:$font-main-2;-webkit-font-smoothing:ant
 		
 	}
 
+	@media screen and (min-width: 992px){
+		.sm-footer, .lg-footer {
+			padding:0px 80px;
+		}
+		.sm-footer{
+			.social-links {
+				margin-bottom: 17px;
+			}
+		}
+		.lg-footer {
+			padding-bottom: 25px;
+    		padding-top: 2px;
+		}
+	}
 
 }
 
