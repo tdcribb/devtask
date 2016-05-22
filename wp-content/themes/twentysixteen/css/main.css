@@ -7,9 +7,6 @@ body {
     margin-left: 0px;
     margin-right: 0px; }
 
-.def-font-fam, .reason-container .reason-text p, .impacts-container .row .impact-block .impact-text, .impacts-container .row .impact-block .impact-link, .latest-blog .row .post-body .post-content, .latest-blog .row .post-body .post-read-more {
-  font-family: "Open Sans", sans-serif; }
-
 .container-fluid {
   padding: 0px !important; }
 
@@ -125,7 +122,7 @@ body {
       float: right;
       margin-top: 4px;
       margin-right: 4px; } }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .header .main-nav {
     position: absolute;
     top: 40px;
@@ -253,6 +250,8 @@ body {
     max-width: 865px;
     padding: 45px 100px 45px 100px;
     position: relative; }
+    .reason-container .reason-text p {
+      font-family: "Open Sans", sans-serif; }
   @media screen and (min-width: 992px) {
     .reason-container .reason-text {
       padding: 32px 0px 60px 0px; }
@@ -312,6 +311,7 @@ body {
     .impacts-container .row .impact-block .impact-text {
       font-size: 17px;
       text-align: center;
+      font-family: "Open Sans", sans-serif;
       font-weight: 700;
       margin-top: 10px;
       margin-bottom: 32px; }
@@ -323,6 +323,7 @@ body {
       text-align: center;
       color: #fff;
       text-transform: uppercase;
+      font-family: "Open Sans", sans-serif;
       margin-bottom: 45px; }
       .impacts-container .row .impact-block .impact-link span {
         font-family: "Open Sans", sans-serif;
@@ -384,12 +385,14 @@ body {
       margin-bottom: 13px;
       font-weight: 700; }
     .latest-blog .row .post-body .post-content {
+      font-family: "Open Sans", sans-serif;
       font-weight: 400;
       line-height: 30px; }
       .latest-blog .row .post-body .post-content p {
         padding-bottom: 15px; }
     .latest-blog .row .post-body .post-read-more {
       text-transform: uppercase;
+      font-family: "Open Sans", sans-serif;
       font-weight: 700;
       font-size: 16px;
       letter-spacing: 0.9px; }

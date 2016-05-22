@@ -10,50 +10,50 @@
  */
 ?>
 
-		</div><!-- .site-content -->
+		<footer class="footer">
+			<div class="container-fluid">
+				<div class="row sm-footer">
+					<div class="left-links col-xs-6">
+						<a href="#" class="footer-link">Calendar</a>
+						<a href="#" class="footer-link">Style Guide</a>
+					</div>
+					<div class="social-links col-xs-8 col-sm-4 col-md-6 col-lg-6">
+						<div class="search">
+							<i class="search"><?php get_search_form( $echo = true ) ?></i>
+						</div>
+						<div class="social">
+							<i class="fa fa-facebook-square" aria-hidden="true"></i>
+							<i class="fa fa-twitter-square" aria-hidden="true"></i>
+							<i class="fa fa-youtube-square" aria-hidden="true"></i>
+						</div>
+					</div>
+				</div>
 
-		<footer id="colophon" class="site-footer" role="contentinfo">
-			<?php if ( has_nav_menu( 'primary' ) ) : ?>
-				<nav class="main-navigation" role="navigation" aria-label="<?php esc_attr_e( 'Footer Primary Menu', 'twentysixteen' ); ?>">
-					<?php
-						wp_nav_menu( array(
-							'theme_location' => 'primary',
-							'menu_class'     => 'primary-menu',
-						 ) );
-					?>
-				</nav><!-- .main-navigation -->
-			<?php endif; ?>
+				<div class="row lg-footer">
+					<div class="inform col-xs-12 col-sm-6 col-md-6 col-lg-6">
+						<div class="inform-title">STAY INFORMED</div>
+						<label class="email-label">Email Address<span>*</span></label>
+						<input class="email-input" />
+						<button class="submit-email">SUBMIT</button>
+					</div>
+					<div class="info col-xs-12 col-sm-6 col-md-6 col-lg-6">
+						<div class="loc-cont">
+							<div class="info-title">RMH FOUNDATION</div>
+							<div class="info-addr">2010 Health Campus Drive Harrisonburg, VA 22801</div>
+							<div class="info-phn">Phone: 540.564.7222</div>
+						</div>
+						<div class="oth-cont">
+							<span class="copy">&copy; 2016 RMH Foundation</span>
+							<a class="pp">Privacy Policy</a>
+						</div>
+						<div class="site-credit">
+							Website by
+							<a href="http://blackbaud.com">Blackbaud</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
 
-			<?php if ( has_nav_menu( 'social' ) ) : ?>
-				<nav class="social-navigation" role="navigation" aria-label="<?php esc_attr_e( 'Footer Social Links Menu', 'twentysixteen' ); ?>">
-					<?php
-						wp_nav_menu( array(
-							'theme_location' => 'social',
-							'menu_class'     => 'social-links-menu',
-							'depth'          => 1,
-							'link_before'    => '<span class="screen-reader-text">',
-							'link_after'     => '</span>',
-						) );
-					?>
-				</nav><!-- .social-navigation -->
-			<?php endif; ?>
-
-			<div class="site-info">
-				<?php
-					/**
-					 * Fires before the twentysixteen footer text for footer customization.
-					 *
-					 * @since Twenty Sixteen 1.0
-					 */
-					do_action( 'twentysixteen_credits' );
-				?>
-				<span class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></span>
-				<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'twentysixteen' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'twentysixteen' ), 'WordPress' ); ?></a>
-			</div><!-- .site-info -->
-		</footer><!-- .site-footer -->
-	</div><!-- .site-inner -->
-</div><!-- .site -->
-
-<?php wp_footer(); ?>
 </body>
 </html>
