@@ -24,8 +24,3 @@ ACF = Number (in Impacts)
 
 - There are other areas of the design I would have made suggestions of slight changes for a better look and user feel such as input field sizes, paddings, margins, transitions, etc. but I developed according to what was given. Please note that I would have made these updates but the unknown processes of allowing the developer flexibility to make these decisions I stayed true to the design provided.
 
-
-LOCATIONS:
-/wp-content/themes/twentysixteen/js/
-/wp-content/themes/twentysixteen/css/
-/wp-content/assets/
